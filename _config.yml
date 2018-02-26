@@ -1,0 +1,79 @@
+# Menus
+menu:
+  首页: .
+  归档: archives
+  关于: about
+
+# Customize
+customize:
+    logo:
+        enabled: true
+        width: 40
+        height: 40
+        url: images/logo.png
+    profile:
+        enabled: true # Whether to show profile bar
+        avatar: css/images/avatar.png
+        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: Zhilong
+        author_title: A CS Student
+        location: 北京, 中国
+        follow: http://github.com/thesharing/
+    highlight: pojoaque
+    sidebar: left # sidebar position, options: left, right
+    thumbnail: false # enable posts thumbnail, options: true, false
+    favicon: css/images/favicon.png # path to favicon
+    social_links:
+        github: http://github.com/thesharing/
+        stack-overflow: http://stackoverflow.com/users/3467196/thesharing?tab=profile
+        steam: http://steamcommunity.com/id/cyprestar/
+        instagram: http://www.instagram.com/cyprestar/
+        weibo: http://weibo.com/sharinginworld/ 
+        facebook: https://www.facebook.com/cyprestar/
+        twitter: http://twitter.com/cyprestar/
+        
+# Widgets
+widgets:
+    - recent_posts
+    - category
+    - archive
+    - tag
+    - tagcloud
+    - links
+
+# Search
+search:
+    swiftype: # enter swiftype install key here
+    baidu: true # you need to disable other search engines to use Baidu search, options: true, false
+
+# Comment
+comment:
+    disqus: thesharing # enter disqus shortname here
+    duoshuo: # enter duoshuo shortname here
+    youyan: # enter youyan uid here
+
+# Share
+share: default # options: jiathis, bdshare, addtoany, default
+
+# Plugins
+plugins:
+    fancybox: true # options: true, false
+    google_analytics: UA-74183669-1 # enter the tracking ID for your Google Analytics
+    google_site_verification: googleec07a47add56e5b0 # enter Google site verification code
+    baidu_analytics: 631ec0463314a38fa28346d593dadbed # enter Baidu Analytics hash key
+    mathjax: true
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:  
+        fb_admins:
+        twitter_id:
+        google_plus:
+    links:
+        GitHub - Thesharing: http://github.com/thesharing/
+        LeetCode - Thesharing: https://leetcode.com/thesharing/
+        知乎 - 柏星: https://www.zhihu.com/people/Thesharing/
+        豆瓣 - cyprestar: http://www.douban.com/people/thesharing/
+        政子的博客: http://blog.zhengzi.me/
+        弹幕派: http://www.danmakupie.com/
