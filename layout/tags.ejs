@@ -1,10 +1,19 @@
-<section class="layout-wrap">
-    <div class="layout-title">
-        <span><%= page.title %></span>
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                <%= _p('common.tag', Infinity) %>
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                <% _list_tags().forEach(tag => { %>
+                <div class="control">
+                    <a class="tags has-addons" href="<%= tag.url %>">
+                        <span class="tag"><%= tag.name %></span>
+                        <span class="tag is-grey"><%= tag.count %></span>
+                    </a>
+                </div>
+                <% }) %>
+            </div>
+        </div>
     </div>
-    <div class="layout-wrap-inner tag-cloud">
-        <% if(site.tags.length) { %>
-            <%- tagcloud({min_font: 14, max_font: 28}) %>
-        <% } %>
-    </div>
-</section>
+</div>
