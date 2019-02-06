@@ -1,80 +1,241 @@
-# Menus
-menu:
-  首页: .
-  归档: archives
-  关于: about
-  RSS: rss.xml
-
-# Customize
-customize:
-    logo:
-        enabled: true
-        width: 40
-        height: 40
-        url: images/logo.png
-    profile:
-        enabled: true # Whether to show profile bar
-        avatar: css/images/avatar.png
-        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: Zhilong
-        author_title: A CS Student
-        location: 北京, 中国
-        follow: http://github.com/thesharing/
-    highlight: pojoaque
-    sidebar: left # sidebar position, options: left, right
-    thumbnail: false # enable posts thumbnail, options: true, false
-    favicon: css/images/favicon.png # path to favicon
-    social_links:
-        github: http://github.com/thesharing/
-        stack-overflow: http://stackoverflow.com/users/3467196/thesharing?tab=profile
-        steam: http://steamcommunity.com/id/cyprestar/
-        instagram: http://www.instagram.com/cyprestar/
-        weibo: http://weibo.com/sharinginworld/ 
-        facebook: https://www.facebook.com/cyprestar/
-        twitter: http://twitter.com/cyprestar/
-        
-# Widgets
-widgets:
-    - recent_posts
-    - category
-    - archive
-    - tag
-    - tagcloud
-    - links
-
-# Search
-search:
-    swiftype: # enter swiftype install key here
-    baidu: true # you need to disable other search engines to use Baidu search, options: true, false
-
-# Comment
-comment:
-    disqus: thesharing # enter disqus shortname here
-    duoshuo: # enter duoshuo shortname here
-    youyan: # enter youyan uid here
-
-# Share
-share: default # options: jiathis, bdshare, addtoany, default
-
-# Plugins
-plugins:
-    fancybox: true # options: true, false
-    google_analytics: UA-74183669-1 # enter the tracking ID for your Google Analytics
-    google_site_verification: googleec07a47add56e5b0 # enter Google site verification code
-    baidu_analytics: 7a644dceb2233a88eaca2d202ad70727 # enter Baidu Analytics hash key
-    mathjax: true
-
-# Miscellaneous
-miscellaneous:
-    open_graph: # see http://ogp.me
-        fb_app_id:  
-        fb_admins:
-        twitter_id:
-        google_plus:
+# Version of the Icarus theme that is currently used
+version: 2.3.0
+# Path or URL to the website's icon
+favicon: /images/favicon.png
+# Path or URL to RSS atom.xml
+rss: rss.xml
+# Path or URL to the website's logo to be shown on the left of the navigation bar or footer
+logo: /images/logo.png
+# Open Graph metadata
+# https://hexo.io/docs/helpers.html#open-graph
+open_graph:
+    # Facebook App ID
+    fb_app_id: 
+    # Facebook Admin ID
+    fb_admins: 
+    # Twitter ID
+    twitter_id: 
+    # Twitter site
+    twitter_site: 
+    # Google+ profile link
+    google_plus: 
+# Navigation bar link settings
+navbar:
+    # Navigation bar menu links
+    menu:
+        首页: /
+        归档: /archives
+        关于: /about
+        RSS: /rss.xml
+    # Navigation bar links to be shown on the right
     links:
-        GitHub - Thesharing: http://github.com/thesharing/
-        LeetCode - Thesharing: https://leetcode.com/thesharing/
-        知乎 - 柏星: https://www.zhihu.com/people/Thesharing/
-        豆瓣 - cyprestar: http://www.douban.com/people/thesharing/
-        政子的博客: http://blog.zhengzi.me/
-        弹幕派: http://www.danmakupie.com/
+        GitHub:
+            icon: fab fa-github
+            url: 'http://github.com/thesharing/'
+# Footer section link settings
+footer:
+    # Links to be shown on the right of the footer section
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+# Article display settings
+article:
+    # Code highlight theme
+    # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+    highlight: pojoaque
+    # Whether to show article thumbnail images
+    thumbnail: false
+    # Whether to show estimate article reading time
+    readtime: true
+# Search plugin settings
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins
+search:
+    # Name of the search plugin
+    type: insight
+# Comment plugin settings
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins
+comment:
+    # Name of the comment plugin
+    type: disqus
+    shortname: thesharing
+# Donation entries
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
+donate:
+    -
+        # Donation entry name
+        type: alipay
+        # Qrcode image URL
+        qrcode: '/images/alipay.jpg'
+    -
+        # Donation entry name
+        type: wechat
+        # Qrcode image URL
+        qrcode: '/images/wechat.jpg'
+    # -
+    #     # Donation entry name
+    #     type: paypal
+    #     # Paypal business ID or email address
+    #     business: ''
+    #     # Currency code
+    #     currency_code: USD
+    # -
+    #     # Donation entry name
+    #     type: patreon
+    #     # URL to the Patreon page
+    #     url: ''
+# Share plugin settings
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins
+share:
+    # Share plugin name
+    type: sharejs
+# Sidebar settings.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # left sidebar settings
+    left:
+        # Whether the left sidebar is sticky when page scrolls
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+    # right sidebar settings
+    right:
+        # Whether the right sidebar is sticky when page scrolls
+        # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/make-a-sidebar-sticky-when-page-scrolls/
+        sticky: false
+# Sidebar widget settings
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    -
+        # Widget name
+        type: profile
+        # Where should the widget be placed, left or right
+        position: left
+        # Author name to be shown in the profile widget
+        author: Zhilong
+        # Title of the author to be shown in the profile widget
+        author_title: A CS Student
+        # Author's current location to be shown in the profile widget
+        location: 北京, 中国
+        # Path or URL to the avatar to be shown in the profile widget
+        avatar: /images/avatar.png
+        # Email address for the Gravatar to be shown in the profile widget
+        gravatar: 
+        # Whether to show avatar image rounded or square
+        avatar_rounded: true
+        # Path or URL for the follow button
+        follow_link: 'http://github.com/thesharing/'
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: 'http://github.com/thesharing/'
+            StackOverflow:
+                icon: fab fa-stack-overflow
+                url: 'http://stackoverflow.com/users/3467196/thesharing?tab=profile'
+            Steam:
+                icon: fab fa-steam
+                url: 'http://steamcommunity.com/id/cyprestar/'
+            Instagram:
+                icon: fab fa-instagram
+                url: 'http://www.instagram.com/cyprestar/'
+            Weibo:
+                icon: fab fa-weibo
+                url: ' http://weibo.com/sharinginworld/'
+            Facebook:
+                icon: fab fa-facebook
+                url: 'https://www.facebook.com/cyprestar/'
+            Twitter:
+                icon: fab fa-twitter
+                url: 'http://twitter.com/cyprestar/'
+    -
+        # Widget name
+        type: toc
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: links
+        # Where should the widget be placed, left or right
+        position: left
+        # Links to be shown in the links widget
+        links:
+            GitHub - Thesharing: http://github.com/thesharing/
+            LeetCode - Thesharing: https://leetcode.com/thesharing/
+            知乎 - 柏星: https://www.zhihu.com/people/Thesharing/
+            豆瓣 - cyprestar: http://www.douban.com/people/thesharing/
+            政子的博客: http://blog.zhengzi.me/
+            弹幕派: http://www.danmakupie.com/
+    -
+        # Widget name
+        type: recent_posts
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: archive
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: category
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: tag
+        # Where should the widget be placed, left or right
+        position: right
+    -
+        # Widget name
+        type: tagcloud
+        # Where should the widget be placed, left or right
+        position: left
+# Other plugin settings
+plugins:
+    # Enable page animations
+    animejs: true
+    # Enable the lightGallery and Justified Gallery plugins
+    # http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/
+    gallery: true
+    # Enable the Outdated Browser plugin
+    # http://outdatedbrowser.com/
+    outdated-browser: true
+    # Enable the MathJax plugin
+    # http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/
+    mathjax: true
+    # Show the back to top button on mobile devices
+    back-to-top: true
+    # Google Analytics plugin settings
+    # http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: UA-74183669-1
+    # Baidu Analytics plugin settings
+    # http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
+    baidu-analytics:
+        # Baidu Analytics tracking id
+        tracking_id: 7a644dceb2233a88eaca2d202ad70727
+    # Hotjar user feedback plugin
+    # http://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Hotjar
+    # hotjar:
+    #     # Hotjar site id
+    #     site_id: 
+    # Show a loading progress bar at top of the page
+    progressbar: true
+    # Show the copy button in the highlighted code area
+    clipboard: true
+    # BuSuanZi site/page view counter
+    # https://busuanzi.ibruce.info
+    busuanzi: false
+# CDN provider settings
+# http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+    # Name or URL of the JavaScript and/or stylesheet CDN provider
+    cdn: 
+    # Name or URL of the webfont CDN provider
+    fontcdn: google
+    # Name or URL of the webfont Icon CDN provider
+    iconcdn: fontawesome
