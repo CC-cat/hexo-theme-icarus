@@ -234,7 +234,7 @@ plugins:
 # http://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL of the JavaScript and/or stylesheet CDN provider
-    cdn: 
+    cdn: unpkg
     # Name or URL of the webfont CDN provider
     fontcdn: google
     # Name or URL of the webfont Icon CDN provider
