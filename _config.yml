@@ -161,9 +161,6 @@ widgets:
             Twitter:
                 icon: fab fa-twitter
                 url: 'http://twitter.com/cyprestar/'
-            RSS:
-                icon: fas fa-rss
-                url: /rss.xml
     -
         # Widget name
         type: toc
