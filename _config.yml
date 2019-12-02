@@ -25,6 +25,7 @@ navbar:
     menu:
         首页: /
         归档: /archives
+        算法题: /algorithms
         关于: /about
         RSS: /rss.xml
     # Navigation bar links to be shown on the right
@@ -46,7 +47,7 @@ footer:
 article:
     # Code highlight theme
     # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-    highlight: pojoaque
+    highlight: vs2015
     # Whether to show article thumbnail images
     thumbnail: false
     # Whether to show estimate article reading time
